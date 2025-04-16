@@ -44,15 +44,18 @@ jobs:
         include:
           - elixir: 1.12.0
             otp: 23.0
+            os: ubuntu-20.04  # Keep ubuntu-20.04 for OTP 23 compatibility
           - elixir: 1.13.0
             otp: 24.0
+            os: ubuntu-22.04
           - elixir: 1.14.0
             otp: 25.0
+            os: ubuntu-22.04
+          - elixir: 1.16.0
+            otp: 26.0
+            os: ubuntu-22.04
 
-    # TODO change this to ubuntu-latest after OTP 23 is deprecated, see
-    # https://github.com/erlef/setup-beam#compatibility-between-operating-system-and-erlangotp
-    # for compatibility
-    runs-on: ubuntu-20.04
+    runs-on: ${{ matrix.os }}
 
     steps:
       - uses: actions/checkout@v3
