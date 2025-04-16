@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+## v0.14.4 (2025-04-16)
+
+### Fixes
+
+  * Update ruster_precompiled to 0.7.0
+
 ## v0.14.3 (2023-03-27)
 
 ### Fixes
