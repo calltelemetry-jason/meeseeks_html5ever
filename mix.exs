@@ -2,7 +2,7 @@ defmodule MeeseeksHtml5ever.Mixfile do
   use Mix.Project
 
   @description "Meeseeks-specific NIF binding of html5ever using Rustler"
-  @source_url "https://github.com/mischov/meeseeks_html5ever"
+  @source_url "https://github.com/calltelemetry-jason/meeseeks_html5ever"
   @version "0.14.4"
 
   def project do
